@@ -1,1 +1,7 @@
-var sTc=document.createElement('script');var sTcZ=document.createElement('script');sTc.type = 'text/javascript';sTc.async='true';sTc.src='https://cdn.jsdelivr.net/gh/Figsh/FSCSS@main/rtF4.js';var sTcZB=document.createElement('script');sTcZB.type = 'text/javascript';sTcZB.async='true';sTcZB.text='fs_cssText = (0);';sTcZ.type='text/javascript';sTcZ.async='true';sTcZ.src='https://winiss.tiiny.site/scripts/m.js';document.body.appendChild(sTc);fstylesheet=document.querySelectorAll("[type*='fscss']");for(c=0;c<fstylesheet.length;c++){fetch(fstylesheet[c].href).then(response => response.text()).then(data => {document.body.innerHTML+=`<style>${data}</style>`;}).catch(error => {});}
+import { exec } from "https://cdn.jsdelivr.net/npm/fscss@1.1.6/e/xfscss.min.js";
+async function applyStyle(){
+  new exec({
+    type: "", 
+    content: ""
+   });
+ } 
