@@ -2,15 +2,20 @@
 radius-util,
 padding-util,
 margin-util
-) from spacing-utils/fscss) 
+) from spacing-utils/fscss)
+
 @import((size-util) from size-utils)
 @import((flex-util) from flex-utils)
 @import((*) from icon-mask)
+
+/* initialize modules */
+
 @icon-base()
 @icon-pack()
+
 @flex-util()
 @size-util()
+
 @radius-util()
 @padding-util()
 @margin-util()
-
