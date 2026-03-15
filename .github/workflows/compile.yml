@@ -5,17 +5,19 @@ on:
     paths:
       - "**.fscss"
 
+permissions:
+  contents: write
+
 jobs:
   build-css:
     runs-on: ubuntu-latest
 
-    env:
-      FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
-
     steps:
       - name: Checkout repo
         uses: actions/checkout@v4
-
+        with:
+         persist-credentials: true
+         
       - name: Setup Node
         uses: actions/setup-node@v4
         with:
