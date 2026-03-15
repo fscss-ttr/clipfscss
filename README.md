@@ -1,8 +1,8 @@
 # ClipFSCSS
 
-[Build](https://github.com/fscss-ttr/clipfscss/actions/workflows/compile.yml/badge.svg)
-[Pages](https://img.shields.io/badge/GitHub%20Pages-Live-success)
-[License](https://img.shields.io/badge/license-MIT-blue)
+![Build](https://github.com/fscss-ttr/clipfscss/actions/workflows/compile.yml/badge.svg)
+![Pages](https://img.shields.io/badge/GitHub%20Pages-Live-success)
+![License](https://img.shields.io/badge/license-MIT-blue)
 
 ## Example project demonstrating automatic compilation of FSCSS → CSS using GitHub Actions and deployment with GitHub Pages.
 
