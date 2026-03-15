@@ -1,2 +1,2 @@
 /* */
-@import((*) from counterx)
+@import((counter-init) from counterx)
