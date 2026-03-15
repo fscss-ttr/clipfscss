@@ -4,9 +4,11 @@ padding-util,
 margin-util
 ) from spacing-utils/fscss) 
 @import((size-util) from size-utils)
-@import((*) from icon-mask) 
-@icon-base() 
+@import((flex-util) from flex-utils)
+@import((*) from icon-mask)
+@icon-base()
 @icon-pack()
+@flex-util()
 @size-util()
 @radius-util()
 @padding-util()
