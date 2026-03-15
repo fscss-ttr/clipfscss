@@ -3,11 +3,14 @@ name: Compile FSCSS
 on:
   push:
     paths:
-      - "src/**/*.fscss"
-      
+      - "**.fscss"
+
 jobs:
   build-css:
     runs-on: ubuntu-latest
+
+    env:
+      FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
 
     steps:
       - name: Checkout repo
@@ -16,18 +19,18 @@ jobs:
       - name: Setup Node
         uses: actions/setup-node@v4
         with:
-          node-version: 20
+          node-version: 22
 
       - name: Install dependencies
         run: npm install
 
       - name: Compile FSCSS
-        run: npm run build:css
+        run: npx fscss src/style.fscss public/assets/styles/f.css
 
       - name: Commit compiled CSS
         run: |
           git config --global user.name "github-actions"
           git config --global user.email "github-actions@github.com"
           git add public/assets/styles/f.css
-          git commit -m "Auto compile FSCSS"
+          git commit -m "Auto compile FSCSS" || echo "No changes"
           git push
