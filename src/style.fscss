@@ -2,7 +2,7 @@
 radius-util,
 padding-util,
 margin-util
-) from spacing-utils/fscss)
+) from spacing-utils)
 
 @import((size-util) from size-utils)
 @import((flex-util) from flex-utils)
