@@ -97,7 +97,7 @@ package.json
 ```json
 {
   "dependencies": {
-    "fscss": "^1.1.17"
+    "fscss": "^1.2.6"
   },
   "scripts": {
     "build:css": "fscss src/style.fscss dist/f.css"
